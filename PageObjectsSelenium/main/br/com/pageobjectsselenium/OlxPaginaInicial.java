@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class OlxPaginaInicialFactory {
+public class OlxPaginaInicial {
 	
 	WebDriver driver;
 	 
@@ -18,7 +18,7 @@ public class OlxPaginaInicialFactory {
 	 @FindBy(css = ".btn.btn-large.btn-orange")
 	 WebElement botaoInserirAnuncio1;
 	 	  
-	 public OlxPaginaInicialFactory(WebDriver driver){
+	 public OlxPaginaInicial(WebDriver driver){
 		 this.driver = driver;
 		 //This initElements method will create all WebElements
         PageFactory.initElements(driver, this);
