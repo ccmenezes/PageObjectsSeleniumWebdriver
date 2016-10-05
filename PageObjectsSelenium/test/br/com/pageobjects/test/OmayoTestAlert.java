@@ -1,5 +1,7 @@
 package br.com.pageobjects.test;
 
+import static org.junit.Assert.*;
+
 import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
@@ -36,9 +38,11 @@ public class OmayoTestAlert {
 	}
 
 	@Test
-	public void testHandlingAlert() throws InterruptedException {
+	public void testHandlingAler() throws InterruptedException {
 		page = new Omayo(driver);
 		page.clickButtonClickToGetAlert();
+		String text = "Hello";
+		assertEquals(text, page.goBackPopUpToGetAlertString());
 	}
 
 }

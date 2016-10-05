@@ -5,7 +5,8 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ OmayoTestAlert.class, OmayoTestRadioButton.class })
+@SuiteClasses({ OmayoTestAlert.class, OmayoTestRadioButton.class, OmayoTestComboBox.class,
+	OmayoTestButton.class})
 public class AllTests {
 
 }

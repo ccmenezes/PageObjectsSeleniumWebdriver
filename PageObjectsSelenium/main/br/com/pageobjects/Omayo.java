@@ -1,12 +1,11 @@
 package br.com.pageobjects;
 
-import static org.junit.Assert.assertEquals;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class Omayo {
 	
@@ -21,7 +20,18 @@ public class Omayo {
 	@FindBy(id = "alert1")
 	private WebElement buttonClickToGetAlert;
 	
+	@FindBy(id = "drop1")
+	private WebElement comboboxOlderNews;
+	
+	@FindBy(id = "but1")
+	private WebElement button1;
+	
+	@FindBy(id = "but2")
+	private WebElement button2;
+	
+	
 	private Alert alertToGetAlert;
+	private String alertString;
 		
 	public Omayo(WebDriver driver){
 		this.driver = driver;
@@ -40,9 +50,27 @@ public class Omayo {
 		buttonClickToGetAlert.click();
 		alertToGetAlert = driver.switchTo().alert();
 		Thread.sleep(300);
-		String text = "Hello";
-		assertEquals(text, alertToGetAlert.getText());
+		alertString = alertToGetAlert.getText();
 		alertToGetAlert.accept();		
+	}
+	
+	public String goBackPopUpToGetAlertString (){
+		return alertString;
+	}
+	
+	public void selectComboboxOldNews(String option) {
+		Select select = new Select(comboboxOlderNews);
+		select.selectByVisibleText(option);
+	}
+	
+	public boolean verifyButton1(){
+		boolean enable = true;
+		enable = button1.isEnabled();
+		return enable;
+	}
+	
+	public void clickButton2(){
+		button2.click();
 	}
 	
 }
