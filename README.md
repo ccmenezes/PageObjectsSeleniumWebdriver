@@ -33,7 +33,7 @@ Agora falando sobre a estrutura do projeto, o package que possui os testes está
 </p>
 
 <p>
-O projeto posse ser baixado ou utilizado diretamente com o uso do próprio <b>Github</b>, por meio da url do projeto.
+O projeto pode ser baixado ou utilizado diretamente com o uso do próprio <b>Github</b>, por meio da url do projeto.
 </p>
 
 <p>
