@@ -7,11 +7,11 @@
 <p>Para criar as classes de implementação usamos a classe Page Factory que possui a notação @FindBy que faz um link do elemento localizado a variável do tipo WebElement. Feito isso criamos um método que fará a iteração necessária para usar o web element que queremos.</p>
 
 <p>
-Ex 1: Sem page objects
+Ex 1: <b>Sem</b> page objects
 <br/><br/>
 WebElement botao1 = driver.findElement(By.id(botao1));
 <br/><br/>
-Ex 2: Com page objects
+Ex 2: <b>Com</b> page objects
 <br/><br/>
 @FindBy(id=”botao1”)
 <br/>
