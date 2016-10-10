@@ -29,6 +29,11 @@ public class Omayo {
 	@FindBy(id = "but2")
 	private WebElement button2;
 	
+	@FindBy(id = "checkbox1")
+	private WebElement checkboxOrange;
+	
+	@FindBy(id = "checkbox2")
+	private WebElement checkboxBlue;	
 	
 	private Alert alertToGetAlert;
 	private String alertString;
@@ -71,6 +76,14 @@ public class Omayo {
 	
 	public void clickButton2(){
 		button2.click();
+	}
+	
+	public void clickCheckboxOrange(){
+		checkboxOrange.click();
+	}
+	
+	public void clickCheckboxBlue(){
+		checkboxBlue.click();
 	}
 	
 }
