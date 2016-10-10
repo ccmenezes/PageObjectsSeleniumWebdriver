@@ -69,9 +69,7 @@ public class Omayo {
 	}
 	
 	public boolean verifyButton1(){
-		boolean enable = true;
-		enable = button1.isEnabled();
-		return enable;
+		return button1.isEnabled();
 	}
 	
 	public void clickButton2(){
